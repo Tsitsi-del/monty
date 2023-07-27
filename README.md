@@ -233,3 +233,8 @@ The result of the multiplication will be one digit-long (<10)
 
 Multiply two digits given by the user.
 Read the two digits from stdin, multiply them, and print the result, followed by a new line
+
+Collaborators:
+Tsitsi Chimbuya (https://github.com/Tsitsi-del)[Tsitsi-del]
+Perpetual Okorie (https://github.com/AmazedWonder)[AmazedWonder]
+
