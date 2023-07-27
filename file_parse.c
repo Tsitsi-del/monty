@@ -40,20 +40,6 @@ void file_parse(FILE *monty_file)
 	fclose(data->monty_file);
 	free(data);
 }
-/**
- * Imagine you have a book monty_file where yo can read from
- * we have a little note book caaled line to keep track of the lines we read from the book
- * We have a special notebook called data to remember some important information while reading
- * We ensure notebook data has enough space to write everything we need
- * Check if the space is enough in the notebook data
- * if no space we say oops we cant read the book because theres no space to remember things
- * we prepare a special page inside the line botebook to write down the line we read another to write down what we see in each line
- * Open the MONTY BOOK start reading each line, one by one
- * turning to a new page in the line notebook and write down the number and what we seee on that line
- * after reading each line we try to understand what it says
- * a line might say push 5 means we should push 5 into a special box called stack
- * when we finish reading the entire book and by doing what each line say e.g push 15 we close and we also close line notebook and clean all pages we used to remember.
- */
 
 /**
  * parseline - function to tokenize a line
