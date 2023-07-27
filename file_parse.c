@@ -68,9 +68,3 @@ void parseline(line_t *line, char *buff)
 	}
 	line->content[x] = NULL;
 }
-/**
- * imagine we have a piece of paper with lots of words written on it
- * We have a small box we can put words inside, but the box can only hold two words, so we have to make sure the box is ready and hold two words
- * we take the first word and put it in box
- * we take the second word put it in a box right next to the first word
- *
