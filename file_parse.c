@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * file_parse - function that reads and breaks file in components
+ * file_parse - function reads and breaks file in components
  * @monty_file: script to be read
  * Return: NULL
  */

@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * modop - Function that computes the rest of the division
+ * modop - Function computes the rest of the division
  * of the second top element of the stack by the top element of the stack
  * @stack: pointer to the head node pointer of stack
  * @num_line: line number

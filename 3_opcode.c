@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * qpush - Function that pushes queue
+ * qpush - Function pushes queue
  * @stack: pointer to the head
  * @num_line: line number
  * Return: NULL
@@ -41,7 +41,7 @@ void qpush(stack_t **stack, unsigned int num_line)
 	new->n = arg.arg;
 }
 /**
- * rotrop - Function that rotates stack to right
+ * rotrop - Function rotates stack to right
  * @stack: pointer to the head node pointer of stack
  * @num_line: line number
  * Return: NULL

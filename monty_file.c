@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * main - Function that open monty script file for parsing
+ * main - Function open monty script file for parsing
  * @argc: command line argument counts number of arguments
  * @argv: command line argument array of arguments
  * Return: EXIT_SUCCESS on Success, EXIT_FAILURE on Fail

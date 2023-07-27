@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * push - function used to push a node on top of the stack
+ * push - function is used to push a node on top of the stack
  * @stack: pointer to head node of stack
  * @num_line: line number
  * Return: NULL

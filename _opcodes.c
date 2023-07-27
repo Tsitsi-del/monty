@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * addqu - Function change node of push to queue
+ * addqu - Function used change node of push to queue
  * @stack: pointer to the head node of stack
  * @num_line: line number
  * Return: NULL
