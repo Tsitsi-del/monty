@@ -7,7 +7,7 @@
  *
  * Return: pointer to  matching function
  */
-void (*op_func(line_t line, metadata *data))(stack_t **, unsigned int)
+void (*op_func(line_t line, metadata * data))(stack_t **, unsigned int)
 {
 	unsigned int x = 0;
 	instruction_t ops[] = {

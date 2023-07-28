@@ -1,6 +1,6 @@
 #include "monty.h"
 
-arg_t arg = {0, 0};
+static arg_t arg = {0, 0};
 
 /**
  * check_comment - function that checks if line is a comment
