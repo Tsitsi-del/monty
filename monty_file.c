@@ -23,6 +23,6 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't open file %\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	parsefile(monty_file);
+	file_parse(monty_file);
 	return (EXIT_SUCCESS);
 }

@@ -109,8 +109,15 @@ void divop(stack_t **stack, unsigned int num_line)
 		fprintf(stderr, "L%d: can't div, stack too short\n", num_line);
 		exit(EXIT_FAILURE);
 	}
+	if ((*stack)->n == 0)
+	{
+		fprintf(stderr, "L%d: division by zero\n", num_line);
+		exit(EXIT_FAILURE);
+	}
+
 	tem = *stack;
 	(*stack)->next->n /= (*stack)->n;
 	*stack = (*stack)->next;
 	(*stack)->prev = NULL;
 	free(tem);
+}

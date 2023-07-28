@@ -66,7 +66,7 @@ void pstr(stack_t **stack, unsigned int num_line)
 	{
 		if (temporary->n == 0)
 			break;
-		if (-isalpha(temporary->n) == 0)
+		if (_isalpha(temporary->n) == 0)
 			break;
 
 		cha = temporary->n;

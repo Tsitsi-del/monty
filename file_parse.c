@@ -32,7 +32,7 @@ void file_parse(FILE *monty_file)
 		parseline(&line, data->buff);
 		if (line.content)
 		{
-			get_opcode_func(line, data)(&(data->stack), line.num);
+			op_func(line, data)(&(data->stack), line.num);
 		}
 	}
 	free(data->buff);

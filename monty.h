@@ -98,5 +98,9 @@ void subop(stack_t **stack, unsigned int num_line);
 void divop(stack_t **stack, unsigned int num_line);
 void addqu(stack_t **stack, unsigned int num_line);
 void addst(stack_t **stack, unsigned int num_line);
+void (*op_func(line_t line, metadata *data))(stack_t **, unsigned int);
+bool check_comment(line_t line);
+bool check_args(char *token);
+void check_push(line_t line, metadata *data, char *opcode);
 
 #endif

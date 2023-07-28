@@ -20,7 +20,7 @@ void qpush(stack_t **stack, unsigned int num_line)
 	if (!new)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
-		free_stack(satck);
+		free_stack(stack);
 		exit(EXIT_FAILURE);
 	}
 
