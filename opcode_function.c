@@ -2,7 +2,7 @@
 
 /**
  * op_func - searches for match between opcode and user input
- * @line: struct of line contents and line num of the script
+ * @line: struct of line contents/line num of the script
  * @data: struct of all allocated memory
  *
  * Return: pointer to  matching function

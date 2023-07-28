@@ -3,7 +3,7 @@
 arg_t arg = {0, 0};
 
 /**
- * check_comment - function that checks if line is a comment
+ * check_comment - function checks if line is a comment
  * @line: struct of line contents and line number
  *
  * Return: true if comment, else false
@@ -52,7 +52,7 @@ bool check_args(char *token)
 }
 
 /**
- * check_push - function check if push opcode is being used
+ * check_push - function checks if push opcode is being used
  * @line: struct of line contents and line number
  * @opcode: the opcode to compare
  * @data: struct containing all allocated memory
