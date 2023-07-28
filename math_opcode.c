@@ -18,7 +18,7 @@ void modop(stack_t **stack, unsigned int num_line)
 	}
 	if ((*stack)->n == 0)
 	{
-		fprintf(stderr, "L%d: division by zero\n", new_line);
+		fprintf(stderr, "L%d: division by zero\n", num_line);
 		exit(EXIT_FAILURE);
 	}
 	tmp = *stack;
@@ -35,7 +35,7 @@ void modop(stack_t **stack, unsigned int num_line)
  */
 void mulop(stack_t **stack, unsigned int num_line)
 {
-	stack_t tem;
+	stack_t *tem;
 
 	if (!(*stack) || !(*stack)->next)
 	{
@@ -104,7 +104,7 @@ void divop(stack_t **stack, unsigned int num_line)
 {
 	stack_t *tem;
 
-	if (!(*stack) || !(stack)->next)
+	if (!(*stack) || !(*stack)->next)
 	{
 		fprintf(stderr, "L%d: can't div, stack too short\n", num_line);
 		exit(EXIT_FAILURE);

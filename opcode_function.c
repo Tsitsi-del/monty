@@ -53,8 +53,7 @@ void (*op_func(line_t line, metadata * data))(stack_t **, unsigned int)
 		x++;
 	}
 
-	fprintf(stderr, "L%d: unknown instruction %s\n", line.number,
-			line.content[0]);
+	fprintf(stderr, "L%d: unknown instruction %s\n", line.num, line.content[0]);
 	free(line.content);
 	free(data->buff);
 	free_stack(&(data->stack));

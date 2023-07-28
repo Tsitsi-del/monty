@@ -1,6 +1,6 @@
 #include "monty.h"
 
-static arg_t arg = {0, 0};
+arg_t arg = {0, 0};
 
 /**
  * check_comment - function that checks if line is a comment
@@ -61,10 +61,10 @@ bool check_args(char *token)
  */
 void check_push(line_t line, metadata *data, char *opcode)
 {
-	if ((strcmp(opcode, "push") == 0) && !argument_check(line.content[1]))
+	if ((strcmp(opcode, "push") == 0) && !check_args(line.content[1]))
 	{
 		free(line.content);
-		fprintf(stderr, "L%d: usage: push integer\n", line.number);
+		fprintf(stderr, "L%d: usage: push integer\n", line.num);
 		free(data->buff);
 		free_stack(&(data->stack));
 		fclose(data->monty_file);

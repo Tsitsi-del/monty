@@ -10,7 +10,7 @@
 void addqu(stack_t **stack, unsigned int num_line)
 {
 	(void)stack;
-	void(num_line);
+	(void)num_line;
 
 	arg.flag = 1;
 }
